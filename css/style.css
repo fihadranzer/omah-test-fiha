@@ -70,3 +70,11 @@
   background-color: #ff7527;
 }
 
+
+.hero-content-item p{
+    max-width: 14rem;
+}
+
+.hero-content-item span{
+    color: #ff7527;
+}

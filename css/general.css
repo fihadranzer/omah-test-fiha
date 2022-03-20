@@ -94,3 +94,11 @@ body {
 .mr-b-30 {
   margin-bottom: 3rem;
 }
+
+.normal-details {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 3rem;
+  color: #203239;
+  opacity: 0.55;
+}
