@@ -91,8 +91,30 @@ body {
   line-height: 150%;
 }
 
+.medium-title {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #203239;
+}
+
+.regular-title{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #203239;
+}
+
+/* others */
 .mr-b-30 {
   margin-bottom: 3rem;
+}
+
+.mr-b-50 {
+    margin-bottom: 5rem;
+  }
+
+.mr-30 {
+  margin: 3rem 0;
 }
 
 .normal-details {

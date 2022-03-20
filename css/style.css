@@ -29,9 +29,8 @@
   padding: 1.2rem;
   display: flex;
   align-items: center;
-  max-width:90%;
+  max-width: 90%;
   margin: 6rem 0;
-  
 }
 
 .search {
@@ -70,11 +69,58 @@
   background-color: #ff7527;
 }
 
-
-.hero-content-item p{
-    max-width: 14rem;
+.hero-content-item p {
+  max-width: 14rem;
 }
 
-.hero-content-item span{
-    color: #ff7527;
+.hero-content-item span {
+  color: #ff7527;
+}
+
+/* **************************** */
+/* SECTION PROCESS STARTS HERE  */
+/* **************************** */
+
+.section-proccess {
+  padding: 6rem 0;
+}
+.proccess-box {
+  gap: 3rem;
+}
+.proccess-title {
+  max-width: 53rem;
+}
+
+.process-card-box {
+  border-radius: 1rem;
+  transition: all 0.5s;
+}
+
+.process-card-box:focus{
+border: none;
+}
+.process-card-box:hover {
+ border:  1px solid rebeccapurple ;
+  
+}
+
+
+
+.card-container {
+  padding: 1.5rem 1.8rem;
+}
+
+.card-title {
+  margin-bottom: 2rem;
+}
+.card-details {
+  max-width: 23.2rem;
+  margin-bottom: 5rem;
+  min-height: 15rem;
+}
+
+.card-btn {
+  background-color: #203239;
+  color: #fff;
+  display: inline-block;
 }
