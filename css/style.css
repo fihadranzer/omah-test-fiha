@@ -1,0 +1,61 @@
+/* **************************** */
+/* SECTION NAVBAR STARTS HERE  */
+/* **************************** */
+
+/* **************************** */
+/* SECTION HERO STARTS HERE  */
+/* **************************** */
+
+.grid-columns-hero {
+  grid-template-columns: 3fr 1.5fr;
+}
+
+.hero-details {
+  max-width: 54.4rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #203239;
+  opacity: 0.55;
+  line-height: 3rem;
+}
+
+.form-box {
+  border: 1px solid red;
+}
+
+.search {
+  width: 70%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  padding: 2.4rem 2rem;
+}
+
+.form-box input::placeholder {
+  font-size: 1.6rem;
+  color: #203239;
+  opacity: 0.55;
+}
+
+.form-box i {
+  font-size: 2.4rem;
+  background: transparent;
+  color: #203239;
+  padding: 2.4rem 2rem;
+}
+
+.search-btn {
+  background-color: #203239;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.7rem 4rem;
+  transition: all 0.4s ease;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.search-btn:hover {
+  background-color: #ff7527;
+  
+}
