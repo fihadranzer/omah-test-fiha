@@ -6,6 +6,9 @@
 /* SECTION HERO STARTS HERE  */
 /* **************************** */
 
+.section-hero {
+  background-color: #eeedde;
+}
 .grid-columns-hero {
   grid-template-columns: 3fr 1.5fr;
 }
@@ -17,18 +20,25 @@
   color: #203239;
   opacity: 0.55;
   line-height: 3rem;
+  margin-bottom: 3rem;
 }
 
 .form-box {
-  border: 1px solid red;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  max-width:90%;
+  margin: 6rem 0;
+  
 }
 
 .search {
-  width: 70%;
   padding: 1rem;
   border: none;
   outline: none;
-  padding: 2.4rem 2rem;
+  width: 80%;
 }
 
 .form-box input::placeholder {
@@ -41,7 +51,7 @@
   font-size: 2.4rem;
   background: transparent;
   color: #203239;
-  padding: 2.4rem 2rem;
+  padding-left: 1rem;
 }
 
 .search-btn {
@@ -49,13 +59,14 @@
   color: #fff;
   border: none;
   border-radius: 1rem;
-  padding: 1.7rem 4rem;
+  padding: 1.6rem 4rem;
   transition: all 0.4s ease;
   font-size: 1.6rem;
   font-weight: 600;
+  box-shadow: 0 6px 8px 0 rgba(32, 50, 57, 0.253);
 }
 
 .search-btn:hover {
   background-color: #ff7527;
-  
 }
+

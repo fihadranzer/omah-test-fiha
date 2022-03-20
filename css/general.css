@@ -73,16 +73,24 @@ body {
   margin: 0 auto;
 }
 
+/* grids */
+.grid {
+  display: grid;
+}
 
-.grid{
-    display: grid;
+.grid-column-3 {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* Titles */
 
-.large-title{
-    font-size: 5.6rem;
-    color: #203239;
-    font-weight: 600;
-    line-height: 150%;
+.large-title {
+  font-size: 5.6rem;
+  color: #203239;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.mr-b-30 {
+  margin-bottom: 3rem;
 }
