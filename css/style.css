@@ -82,7 +82,7 @@
 /* **************************** */
 
 .section-proccess {
-  padding: 6rem 0;
+  padding: 8rem 0;
 }
 .proccess-box {
   gap: 3rem;
@@ -93,34 +93,249 @@
 
 .process-card-box {
   border-radius: 1rem;
-  transition: all 0.5s;
+  border: 1px solid transparent;
 }
 
-.process-card-box:focus{
-border: none;
+.process-card-box:focus {
+  border: none;
 }
 .process-card-box:hover {
- border:  1px solid rebeccapurple ;
-  
+  border: 1px solid #eeedde;
 }
 
-
-
 .card-container {
-  padding: 1.5rem 1.8rem;
+  padding: 3rem;
+  position: relative;
+}
+
+.card-container::before {
+  content: "";
+  position: absolute;
+  height: 3rem;
+  width: 0.8rem;
+  background-color: #ff7527;
+  top: 1.7rem;
+  left: 0;
+  border-radius: 5rem;
 }
 
 .card-title {
   margin-bottom: 2rem;
 }
 .card-details {
-  max-width: 23.2rem;
   margin-bottom: 5rem;
   min-height: 15rem;
+  line-height: 3rem;
 }
 
 .card-btn {
-  background-color: #203239;
-  color: #fff;
+  position: relative;
+  color: #203239;
   display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 0.8rem;
+}
+
+.card-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: #d6d5c7;
+  width: 20%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  transition: all 0.4s ease;
+}
+
+.process-card-box:hover .card-btn::before {
+  width: 100%;
+}
+
+.fa-arrow-right-long {
+  padding-left: 1rem;
+}
+
+.card-number {
+  font-size: 1.6rem;
+  color: #ff7527;
+  font-weight: 500;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+
+/* **************************** */
+/* SECTION FAVORIT STARTS HERE  */
+/* **************************** */
+
+.section-favourite {
+  background-color: #eeedde;
+  padding-top: 9rem;
+  padding-bottom: 16rem;
+}
+
+.medium-title {
+  margin-bottom: 7rem;
+}
+
+.fav-right-box {
+  justify-items: center;
+  align-content: center;
+}
+
+.details-text {
+  font-size: 1.6rem;
+  color: #203239;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+.favorit-title {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #203239;
+}
+
+.btn-box-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  width: 100%;
+}
+
+.btn-favorite {
+  color: #fff;
+  background-color: #203239;
+  font-size: 1.6rem;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  padding: 1.2rem 4rem;
+  transition: all 0.4s ease;
+}
+
+.btn-favorite:hover {
+  border: 2px solid #203239;
+  background-color: #eeedde;
+  color: #203239;
+}
+.btn-explore {
+  margin-right: 6rem;
+}
+
+.fa-phone {
+  padding-right: 1rem;
+}
+
+.favorite-image-box {
+  position: relative;
+}
+
+.fav-front-img {
+  position: absolute;
+  content: "";
+  top: 6rem;
+  left: 8rem;
+}
+
+/* **************************** */
+/* SECTION KOTA STARTS HERE  */
+/* **************************** */
+
+.kota-details {
+  font-size: 1.6rem;
+  color: #203239;
+  font-weight: 300;
+  line-height: 3rem;
+  max-width: 35.6rem;
+}
+
+.kota-box-grid {
+  gap: 3rem;
+  justify-items: center;
+  align-content: center;
+}
+
+.kota-card-img-box {
+  overflow: hidden;
+  position: relative;
+}
+
+.kota-card-img-box img {
+  transition: all 400ms ease-out 0s;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+}
+
+.kota-card-box:hover .kota-card-img-box img {
+  transform: scale(1.2);
+}
+
+/* **************************** */
+/* SECTION CONTACT STARTS HERE  */
+/* **************************** */
+
+.section-contact {
+  background-color: #eeedde;
+}
+
+.contact-award-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address-box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  color: #203239;
+  line-height: 3rem;
+  width:75%;
+}
+
+.email-box,
+.phone-box {
+  border: 1px solid #ff7527;
+  padding: 2.4rem;
+ 
+ 
+}
+
+.contact-btn {
+  background-color: #ff7527;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.2rem 4rem;
+  text-align: center;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.contact-btn:hover{
+  background-color: rgba(255, 118, 39, 0.199);
+  color: #ff7527;
+  font-weight: 500;
+}
+
+.phone-box {
+  border-radius: 1rem;
+  
+}
+
+.address-box .fa-phone, .fa-square-envelope{
+  font-size: 3rem;
+  padding-right: 2.4rem;
+}
+
+
+.btn-address-box{
+  text-align: center;
+}
+.phone-box-text{
+  display: flex;
+  align-items: center;
 }

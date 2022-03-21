@@ -71,6 +71,7 @@ body {
 .container {
   max-width: 116.6rem;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* grids */
@@ -78,6 +79,10 @@ body {
   display: grid;
 }
 
+
+.grid-column-2 {
+  grid-template-columns: 1fr 1fr;
+}
 .grid-column-3 {
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -104,7 +109,25 @@ body {
     color: #203239;
 }
 
+.small-title{
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #203239;
+}
+
+.xsmall-title{
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #FF7527;
+}
+
 /* others */
+
+.mr-b-20 {
+  margin-bottom: 2rem;
+}
+
 .mr-b-30 {
   margin-bottom: 3rem;
 }
@@ -123,4 +146,8 @@ body {
   line-height: 3rem;
   color: #203239;
   opacity: 0.55;
+}
+
+.sec-pad-medium{
+  padding: 7.5rem 0;
 }
