@@ -339,3 +339,31 @@
   display: flex;
   align-items: center;
 }
+
+
+/* **************************** */
+/* SECTION FOOTER STARTS HERE  */
+/* **************************** */
+
+
+footer {
+  background-color: #203239;
+}
+.footer-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.social-box-footer{
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  list-style: none;
+}
+
+.social-link-item{
+  padding: 0 2rem;
+  font-size: 1.6rem;
+}
