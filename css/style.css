@@ -2,6 +2,54 @@
 /* SECTION NAVBAR STARTS HERE  */
 /* **************************** */
 
+.navbar-main {
+  background-color: #eeedde;
+  padding: 4rem 0;
+}
+
+.nav-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  font-size: 1.6rem;
+  font-weight: 300;
+  display: inline-block;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #203239;
+  margin-left: 10rem;
+  position: relative;
+  display: inline-block;
+  transition: all 0.4s ease;
+}
+
+.nav-item a:focus{
+  font-weight: 500;
+}
+
+.nav-item a:focus .fa-angle-down{
+  rotate: 180deg;
+}
+
+
+.nav-item a:active::after,.nav-item a:focus::after {
+  content: "";
+  position: absolute;
+  background-color: #ff7527;
+  bottom: -1rem;
+  left: 25%;
+  height: 0.5rem;
+  width:2rem;
+  border-radius: 5rem;
+}
+
+
 /* **************************** */
 /* SECTION HERO STARTS HERE  */
 /* **************************** */
@@ -294,15 +342,13 @@
   font-size: 1.6rem;
   color: #203239;
   line-height: 3rem;
-  width:75%;
+  width: 75%;
 }
 
 .email-box,
 .phone-box {
   border: 1px solid #ff7527;
   padding: 2.4rem;
- 
- 
 }
 
 .contact-btn {
@@ -315,7 +361,7 @@
   transition: all 0.4s ease;
 }
 
-.contact-btn:hover{
+.contact-btn:hover {
   background-color: rgba(255, 118, 39, 0.199);
   color: #ff7527;
   font-weight: 500;
@@ -323,47 +369,44 @@
 
 .phone-box {
   border-radius: 1rem;
-  
 }
 
-.address-box .fa-phone, .fa-square-envelope{
+.address-box .fa-phone,
+.fa-square-envelope {
   font-size: 3rem;
   padding-right: 2.4rem;
 }
 
-
-.btn-address-box{
+.btn-address-box {
   text-align: center;
 }
-.phone-box-text{
+.phone-box-text {
   display: flex;
   align-items: center;
 }
-
 
 /* **************************** */
 /* SECTION FOOTER STARTS HERE  */
 /* **************************** */
 
-
 footer {
   background-color: #203239;
 }
-.footer-box{
+.footer-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
 }
 
-.social-box-footer{
+.social-box-footer {
   display: flex;
   justify-content: space-around;
   color: #fff;
   list-style: none;
 }
 
-.social-link-item{
+.social-link-item {
   padding: 0 2rem;
   font-size: 1.6rem;
 }
