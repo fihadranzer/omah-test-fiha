@@ -288,6 +288,22 @@
   left: 8rem;
 }
 
+.favorite-image-box :nth-child(1){
+  transition: all 0.5s ease-in-out;
+}
+
+.favorite-image-box :nth-child(1):hover {
+  transform: rotateY(45deg);
+}
+
+.favorite-image-box :nth-child(2){
+  transition: all 0.5s ease-in-out;
+}
+
+.favorite-image-box :nth-child(2):hover {
+  transform: rotateY(-45deg);
+}
+
 /* **************************** */
 /* SECTION KOTA STARTS HERE  */
 /* **************************** */
