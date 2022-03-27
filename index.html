@@ -22,30 +22,42 @@
     />
     <!-- fontAwesome -->
     <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/queries.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
     <title>Omah Test Demo</title>
   </head>
   <body>
     <main>
       <!--------------------------------->
       <!-- SECTION NAVBAR STARTS HERE --->
-
-      <nav class="navbar-main">
-        <div class="container">
-          <div class="nav-box">
+      <header class="header">
+        <div class="container container-header">
+          <a href="#">
             <div class="logo">
-              <img src="./images/omah_logo.png" alt="Logo_image" />
+              <img src="./images/omah_logo.png" alt="" />
             </div>
-            <ul class="nav-link">
-              <li class="nav-item"><a href="#">Home</a></li>
-              <li class="nav-item"><a href="#">About</a></li>
-              <li class="nav-item"><a href="#">Properties <i class="fa-solid fa-angle-down"></i></a></li>
-              <li class="nav-item"><a href="#">Contact</a></li>
+          </a>
+
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li><a href="#" class="main-nav-link">Home</a></li>
+              <li><a href="#" class="main-nav-link">About</a></li>
+              <li>
+                <a href="#" class="main-nav-link"
+                  >Properties <i class="fa-solid fa-angle-down"></i
+                ></a>
+              </li>
+              <li><a href="#" class="main-nav-link">Contact</a></li>
             </ul>
-          </div>
+          </nav>
+
+          <button class="btn-mobile-nav">
+            <i class="fa-solid fa-bars-staggered icon-mobile-nav"></i>
+            <i class="fa-solid fa-xmark icon-mobile-nav"></i>
+          </button>
         </div>
-      </nav>
+      </header>
+
       <!-- SECTION NAVBAR ENDED HERE  --->
       <!--------------------------------->
 
@@ -182,7 +194,7 @@
       <!-- SECTION FAVOURITE RESIDENT STARTS HERE --->
       <section class="section-favourite">
         <div class="container">
-          <div class="grid grid-column-2">
+          <div class="grid grid-column-2 favourit-grid">
             <div class="fav-left-box">
               <p class="xsmall-title mr-b-30">Pilihan konsumen</p>
               <h2 class="medium-title">Residen Favorit</h2>
