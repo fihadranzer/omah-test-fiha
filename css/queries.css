@@ -8,7 +8,7 @@
   }
 
   .grid-columns-hero {
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr 2fr;
   }
 
   .large-title {
@@ -20,7 +20,7 @@
     text-align: center;
   }
   .hero-right-box img {
-    width: 90%;
+    width: 120%;
   }
 
   .favourit-grid {
@@ -64,9 +64,26 @@
   }
 
   .section-hero .hero-left-box {
-      width: 100%;
+    width: 100%;
     text-align: center;
     justify-content: center;
+  }
+
+  .form-box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-left-box p {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 6rem;
+  }
+
+  .hero-content-box {
+    padding-top: 8rem;
   }
 
   .hero-right-box img {
@@ -130,8 +147,16 @@
   }
   .form-box {
     position: relative;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
   }
 
+  .hero-left-box p {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 6rem;
+  }
   .search-btn {
     position: absolute;
     top: 9rem;
@@ -140,7 +165,7 @@
   }
 
   .hero-content-box {
-    padding-top: 10rem;
+    padding-top: 15rem;
   }
 
   .favorite-image-box img {
@@ -210,5 +235,198 @@
   .fav-right-box {
     padding: 0 10rem;
     text-align: center;
+  }
+
+  .hero-content-item p {
+    max-width: none;
+  }
+
+  .hero-content-item .large-title {
+    line-height: 1;
+  }
+}
+
+/* ********************************* */
+/*  Large Mobile and   Small Tab 672px  */
+/* ********************************* */
+
+@media (max-width: 42em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero-left-box p {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 3rem;
+  }
+
+  .section-proccess .medium-title {
+    padding-left: 0;
+  }
+}
+
+/* ********************************* */
+/*    Small Device 576px  */
+/* ********************************* */
+
+@media (max-width: 36em) {
+  .section-proccess .grid-column-3 {
+    grid-template-columns: 1fr;
+    align-content: center;
+    padding: 2rem 8rem;
+  }
+
+  .card-container h4 {
+    font-size: 2rem;
+  }
+
+  .card-container p {
+    font-size: 1.8rem;
+  }
+
+  .card-details {
+    margin-bottom: 2rem;
+  }
+
+  .fav-left-box {
+    text-align: center;
+  }
+
+  .kota-left-box {
+    text-align: center;
+  }
+  .section-proccess .card-container .card-btn {
+    padding: 1.6rem;
+  }
+
+  .section-proccess .medium-title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3.2rem;
+    padding-bottom: 5rem;
+  }
+
+  .section-kota .grid-column-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .kota-card-box {
+    text-align: center;
+  }
+
+  .kota-card-box .kota-details {
+    max-width: none;
+    padding: 2rem 3rem;
+  }
+
+  .kota-card-img-box {
+    width: 75%;
+    margin: 2rem auto;
+  }
+
+  .container {
+    max-width: 86.6rem;
+  }
+
+  .fav-right-box {
+    padding: 5rem;
+    text-align: center;
+  }
+
+  .favorite-image-box img {
+    height: 60%;
+  }
+
+  .fav-front-img {
+    display: none;
+  }
+}
+
+/* ********************************* */
+/*    Small Device 480px  */
+/* ********************************* */
+
+@media (max-width: 30em) {
+  .fav-right-box .btn-box-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .favorite-image-box {
+    padding-bottom: 5rem;
+  }
+
+  .address-box {
+    flex-direction: column;
+    row-gap: 4rem;
+    align-items: center;
+  }
+
+  .email-box,
+  .phone-box {
+    width: 60%;
+  }
+
+  .phone-box-text {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 2rem;
+  }
+
+  .address-box .fa-phone,
+  .fa-square-envelope {
+    padding-right: 0;
+  }
+
+  html {
+    font-size: 43.75%;
+  }
+
+  .large-title {
+    font-size: 3.2rem;
+  }
+
+  .medium-title {
+    font-size: 2.4rem;
+  }
+
+  .favorite-image-box img {
+    height: 60%;
+  }
+
+  .favorite-image-box img {
+    width: 50%;
+  }
+
+  .contact-award-box {
+    flex-direction: column;
+  }
+}
+
+/* ********************************* */
+/*    Extra Small Device 352px  */
+/* ********************************* */
+
+@media (max-width: 22em) {
+  .hero-content-box .grid-column-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content-item {
+    margin: 2rem auto;
+  }
+}
+
+/* ********************************* */
+/*  Extra Extra Small Device 288px  */
+/* ********************************* */
+
+@media (max-width: 22em) {
+  html {
+    font-size: 32%;
   }
 }

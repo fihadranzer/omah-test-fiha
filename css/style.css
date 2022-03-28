@@ -1,6 +1,7 @@
 /* **************************** */
 /* SECTION NAVBAR STARTS HERE  */
 /* **************************** */
+
 .header {
   background-color: #eeedde;
   padding: 4rem 0;
@@ -8,7 +9,6 @@
 .container-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .main-nav-list {
@@ -18,7 +18,6 @@
 .main-nav-list li {
   font-size: 1.6rem;
   font-weight: 300;
-  display: inline-block;
   list-style: none;
   transition: all 0.4s ease;
 }
@@ -26,22 +25,21 @@
 .main-nav-list li a {
   text-decoration: none;
   color: #203239;
-  margin-left: 10rem;
+  margin-right: 10rem;
   position: relative;
   display: inline-block;
-  transition: all 0.4s ease;
+  transition: all 0.4s;
 }
 
 .main-nav-list li a:focus {
   font-weight: 500;
 }
 
-.main-nav-list li a:focus .fa-angle-down {
+.main-nav-list li a:hover .fa-angle-down {
   rotate: 180deg;
 }
 
-.main-nav-list li a:active::after,
-.main-nav-list li a:focus::after {
+.main-nav-list li a:hover::after {
   content: "";
   position: absolute;
   background-color: #ff7527;
@@ -52,6 +50,36 @@
   border-radius: 5rem;
 }
 
+/* Dropdown Here */
+
+.main-nav-list li {
+  position: relative;
+}
+.main-nav-list li .dropdown {
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  color: #203239;
+  background-color: #dddbb9;
+  transform: rotateX(90deg);
+  transform-origin: top;
+  transition: all 0.4s;
+}
+
+.main-nav-list li .dropdown ul li {
+  border-bottom: 1px solid #ff7527;
+  padding: 1rem 2rem;
+}
+
+
+.main-nav-list li:hover .dropdown {
+  transform: rotateX(0deg);
+}
+.dropdown ul li:hover {
+  background-color: #eeedde;
+  color: #203239;
+}
+/* Dropdown End */
 .btn-mobile-nav {
   border: none;
   background: none;
