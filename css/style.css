@@ -4,7 +4,7 @@
 
 .header {
   background-color: #eeedde;
-  padding: 4rem 0;
+  padding: 3rem 0;
   position: relative;
 }
 .container-header {
@@ -101,6 +101,22 @@
 
 .fa-xmark {
   display: none;
+}
+
+/* Sticky Navbar */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #eeeddef6;
+  z-index: 2;
+  height: 8rem;
+  box-shadow: 0 1.2rem 3.2rem rgba(107, 107, 107, 0.2);
+}
+
+.sticky .section-hero {
+  margin-top: 10.4rem;
 }
 
 /* **************************** */
@@ -202,6 +218,7 @@
 }
 .process-card-box:hover {
   border: 1px solid #eeedde;
+ 
 }
 
 .card-container {
