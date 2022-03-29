@@ -5,10 +5,12 @@
 .header {
   background-color: #eeedde;
   padding: 4rem 0;
+  position: relative;
 }
 .container-header {
   display: flex;
   justify-content: space-between;
+  padding: 0 2rem;
 }
 
 .main-nav-list {

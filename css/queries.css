@@ -121,22 +121,21 @@
     width: 100%;
     height: 100vh;
     z-index: 1;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     opacity: 0;
-    transition: all 0.4s ease-out;
-
+    transition: all 0.5s ease-in;
     pointer-events: none;
     visibility: hidden;
+    transform: translateX(100%);
   }
 
   .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    transform: translateX(0);
   }
 
   .nav-open .fa-xmark {
@@ -158,6 +157,23 @@
   .btn-mobile-nav {
     display: block;
     z-index: 1;
+  }
+
+  .main-nav-list li .dropdown ul li{
+    font-size: 2.4rem;
+  }
+
+
+  .main-nav-list li .dropdown{
+    left: 15rem;
+    top: -2rem;
+  }
+  .dropdown ul li:hover .contact-link{
+    margin-top: 15rem;
+  }
+
+  .main-nav-list li a:hover .fa-angle-down {
+    rotate: 270deg;
   }
 
   /* Mobile Nave End  */
