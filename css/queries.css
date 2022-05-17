@@ -1,0 +1,492 @@
+/* ********************************* */
+/* SMALL PC AND LARGE TAB 1168px  */
+/* ********************************* */
+
+@media (max-width: 73em) {
+  .container {
+    max-width: 106.6rem;
+  }
+
+  .grid-columns-hero {
+    grid-template-columns: 4fr 2fr;
+  }
+
+  .large-title {
+    font-size: 4.8rem;
+    line-height: 130%;
+  }
+
+  .hero-right-box {
+    text-align: center;
+  }
+  .hero-right-box img {
+    width: 120%;
+  }
+
+  .favourit-grid {
+    column-gap: 6rem;
+  }
+
+  .fav-right-box .btn-box-2 {
+    column-gap: 3rem;
+  }
+  .btn-box-2 .btn-favorite {
+    padding: 1.2rem 2rem;
+  }
+
+  .address-box {
+    column-gap: 4rem;
+  }
+}
+
+/* ********************************* */
+/*  LARGE TAB 992px  */
+/* ********************************* */
+@media (max-width: 62em) {
+  .container {
+    max-width: 96.6rem;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+
+  .section-hero .grid-columns-hero {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .section-favourite .grid-column-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .section-hero .hero-left-box {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .form-box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-left-box p {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 6rem;
+  }
+
+  .hero-content-box {
+    padding-top: 8rem;
+  }
+
+  .hero-right-box img {
+    width: 60%;
+  }
+
+  .favorite-image-box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20rem;
+  }
+
+  .favorite-image-box img {
+    height: 80%;
+  }
+
+  .fav-right-box {
+    padding: 0 15rem;
+    text-align: center;
+  }
+
+  .btn-box-2 {
+    justify-content: space-around;
+    gap: none;
+  }
+
+  .btn-explore {
+    margin-right: 0;
+  }
+
+  /* Mobile Nave Starts  */
+
+  .main-nav {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .fa-xmark {
+    display: block;
+  }
+
+  .nav-open .fa-bars-staggered {
+    display: none;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-list li a {
+    font-size: 2.4rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1;
+  }
+
+  .main-nav-list li .dropdown ul li{
+    font-size: 2.4rem;
+  }
+
+
+  .main-nav-list li .dropdown{
+    left: 15rem;
+    top: -2rem;
+  }
+  .dropdown ul li:hover .contact-link{
+    margin-top: 15rem;
+  }
+
+  .main-nav-list li a:hover .fa-angle-down {
+    rotate: 270deg;
+  }
+
+  /* Mobile Nave End  */
+}
+
+/* ********************************* */
+/*  medium TAB 896px  */
+/* ********************************* */
+
+@media (max-width: 56em) {
+  .contact-award-box {
+    flex-direction: column;
+  }
+
+  .favorite-image-box img {
+    height: 70%;
+  }
+
+  .contact-right {
+    margin-right: 6rem;
+  }
+}
+
+/* ********************************* */
+/*  Large Mobile Device  Small Tab 784px  */
+/* ********************************* */
+@media (max-width: 49em) {
+  .section-hero .large-title {
+    text-align: center;
+    line-height: 120%;
+  }
+  .form-box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-left-box p {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 6rem;
+  }
+  .search-btn {
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    width: 100%;
+  }
+
+  .hero-content-box {
+    padding-top: 15rem;
+  }
+
+  .favorite-image-box img {
+    height: 80%;
+  }
+
+  .section-kota .grid-column-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .kota-card-box {
+    padding: 2rem;
+  }
+
+  .section-proccess .grid-column-3 {
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+  }
+
+  .section-proccess .medium-title {
+    padding-left: 4rem;
+  }
+
+  .section-proccess .process-card-box {
+    padding: 3rem;
+  }
+
+  .section-contact .grid-columns-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-award-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contact-title {
+    text-align: center;
+    display: block;
+  }
+
+  .section-contact .contact-title .medium-title {
+    line-height: 1;
+  }
+
+  .address-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+  .contact-right {
+    width: 100%;
+  }
+
+  .footer-box {
+    justify-content: space-around;
+  }
+
+  .section-favourite {
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+  }
+
+  .fav-right-box {
+    padding: 0 10rem;
+    text-align: center;
+  }
+
+  .hero-content-item p {
+    max-width: none;
+  }
+
+  .hero-content-item .large-title {
+    line-height: 1;
+  }
+}
+
+/* ********************************* */
+/*  Large Mobile and   Small Tab 672px  */
+/* ********************************* */
+
+@media (max-width: 42em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero-left-box p {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 3rem;
+  }
+
+  .section-proccess .medium-title {
+    padding-left: 0;
+  }
+}
+
+/* ********************************* */
+/*    Small Device 576px  */
+/* ********************************* */
+
+@media (max-width: 36em) {
+  .section-proccess .grid-column-3 {
+    grid-template-columns: 1fr;
+    align-content: center;
+    padding: 2rem 8rem;
+  }
+
+  .card-container h4 {
+    font-size: 2rem;
+  }
+
+  .card-container p {
+    font-size: 1.8rem;
+  }
+
+  .card-details {
+    margin-bottom: 2rem;
+  }
+
+  .fav-left-box {
+    text-align: center;
+  }
+
+  .kota-left-box {
+    text-align: center;
+  }
+  .section-proccess .card-container .card-btn {
+    padding: 1.6rem;
+  }
+
+  .section-proccess .medium-title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3.2rem;
+    padding-bottom: 5rem;
+  }
+
+  .section-kota .grid-column-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .kota-card-box {
+    text-align: center;
+  }
+
+  .kota-card-box .kota-details {
+    max-width: none;
+    padding: 2rem 3rem;
+  }
+
+  .kota-card-img-box {
+    width: 75%;
+    margin: 2rem auto;
+  }
+
+  .container {
+    max-width: 86.6rem;
+  }
+
+  .fav-right-box {
+    padding: 5rem;
+    text-align: center;
+  }
+
+  .favorite-image-box img {
+    height: 60%;
+  }
+
+  .fav-front-img {
+    display: none;
+  }
+}
+
+/* ********************************* */
+/*    Small Device 480px  */
+/* ********************************* */
+
+@media (max-width: 30em) {
+  .fav-right-box .btn-box-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .favorite-image-box {
+    padding-bottom: 5rem;
+  }
+
+  .address-box {
+    flex-direction: column;
+    row-gap: 4rem;
+    align-items: center;
+  }
+
+  .email-box,
+  .phone-box {
+    width: 60%;
+  }
+
+  .phone-box-text {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 2rem;
+  }
+
+  .address-box .fa-phone,
+  .fa-square-envelope {
+    padding-right: 0;
+  }
+
+  html {
+    font-size: 43.75%;
+  }
+
+  .large-title {
+    font-size: 3.2rem;
+  }
+
+  .medium-title {
+    font-size: 2.4rem;
+  }
+
+  .favorite-image-box img {
+    height: 60%;
+  }
+
+  .favorite-image-box img {
+    width: 50%;
+  }
+
+  .contact-award-box {
+    flex-direction: column;
+  }
+}
+
+/* ********************************* */
+/*    Extra Small Device 352px  */
+/* ********************************* */
+
+@media (max-width: 22em) {
+  .hero-content-box .grid-column-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content-item {
+    margin: 2rem auto;
+  }
+}
+
+/* ********************************* */
+/*  Extra Extra Small Device 288px  */
+/* ********************************* */
+
+@media (max-width: 22em) {
+  html {
+    font-size: 32%;
+  }
+}
